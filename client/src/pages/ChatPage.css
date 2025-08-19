@@ -1,0 +1,123 @@
+.chatting-user {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  flex: 1;
+  height: calc(100vh - 10vh - 40px);
+}
+
+/* Chat container */
+.chatting-specific {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header */
+.chatting-header {
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  background: #f5f5f5;
+}
+
+/* Messages section */
+.chatting-messages {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+/* Messages */
+.chat-message {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.chat-message.other {
+  align-self: flex-start;
+  background-color: #e6e6e6; /* gray for others */
+}
+
+.chat-message.me {
+  align-self: flex-end;
+  background-color: #4a90e2; /* blue for me */
+  color: white;
+}
+
+/* Input box */
+.form-message {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.form-message input {
+  flex: 1;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-message button {
+  margin-left: 10px;
+  padding: 0 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 45px;
+}
+
+.form-message button:hover {
+  background: #357ab8;
+}
+
+.form-form {
+  display: flex;
+  align-items: center;  /* vertically align input & button */
+  gap: 10px;            /* spacing between input and button */
+  width: 100%;
+}
+
+.form-form input {
+  flex: 1;                  /* take all available space */
+  padding: 10px;
+  height: 45px;             /* same height as button */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-form button {
+  height: 45px;             /* fixed height */
+  padding: 0 20px;          /* width adjusts by content */
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;      /* prevent text wrapping */
+}
+
+.form-form button:hover {
+  background: #357ab8;
+}

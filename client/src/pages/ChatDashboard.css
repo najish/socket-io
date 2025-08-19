@@ -1,0 +1,9 @@
+.chatdashboard {
+    width: calc(100vw - 200px);
+}
+
+
+.chatting-image {
+    height: 100%;
+    width: 100%;
+}

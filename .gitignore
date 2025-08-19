@@ -1,0 +1,110 @@
+# ====================
+# Node dependencies
+# ====================
+node_modules/
+**/node_modules/
+
+# ====================
+# Yarn
+# ====================
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/versions
+.yarnrc.yml
+.yarn-integrity
+.pnp.*
+.yarn/cache/
+
+# ====================
+# Logs
+# ====================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ====================
+# Environment files
+# ====================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ====================
+# Build outputs
+# ====================
+dist/
+build/
+**/dist/
+**/build/
+
+# ====================
+# Vite cache
+# ====================
+.vite/
+.vite/deps/
+
+# ====================
+# VS Code
+# ====================
+.vscode/
+
+# ====================
+# MacOS
+# ====================
+.DS_Store
+
+# ====================
+# Misc temp
+# ====================
+*.swp
+*.swo
+*.bak
+*.cache
+
+# ====================
+# Prettier / Formatter
+# ====================
+.prettierignore
+
+# ====================
+# Docker
+# ====================
+docker-compose.override.yml
+**/Dockerfile.*
+**/docker-compose.override.yml
+**/docker-compose.local.yml
+*.docker
+**/.dockerignore
+**/tmp/
+**/temp/
+
+# ====================
+# GitHub Actions
+# ====================
+.github/workflows/**/node_modules/
+.github/workflows/**/dist/
+.github/workflows/**/build/
+.github/workflows/**/tmp/
+.github/workflows/**/cache/
+**/.github/cache/
+
+# ====================
+# Client-specific (Vite React)
+# ====================
+client/node_modules/
+client/dist/
+client/.vite/
+
+# ====================
+# Server-specific (Express)
+# ====================
+server/node_modules/
+server/dist/
+server/build/
+server/.cache/

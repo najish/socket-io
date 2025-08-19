@@ -1,0 +1,95 @@
+/* Reset some defaults */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+}
+
+/* Header */
+.header {
+  background-color: #1e293b; 
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: 1000;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #334155; 
+  color: white;
+  width: 220px;
+  position: fixed;
+  top: 10vh; 
+  left: 0;
+  bottom: 40px;
+  padding: 1rem;
+  overflow-y: auto;
+  height: 90vh;
+}
+
+div.chat-page-list-none {
+  display:none;
+} 
+
+
+div.chat-page-list {
+  display: block
+}
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+/* Main content */
+
+.main-body {
+  width: 100vw;
+}
+
+.main-sidebar {
+
+}
+.main-content {
+  margin-top: 10vh; 
+  margin-bottom: 40px;
+  margin-left: 220px; 
+  min-height: calc(100vh - 10vh - 40px);
+  background-color: #f1f5f9;
+  color: black;
+  box-sizing: border-box;
+  width: calc(100% - 220px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  position: fixed;
+}
+
+
+.footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  position: fixed;
+  bottom: 0;
+  left: 220px; 
+  right: 0;
+  height: 40px;
+  z-index: 1000;
+}
+

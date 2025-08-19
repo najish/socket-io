@@ -1,0 +1,91 @@
+.videocall-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #1e1e1e;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.join-box {
+  background: #2c2c2c;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.join-box h1 {
+  margin-bottom: 15px;
+}
+
+.join-box input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 12px;
+}
+
+.join-box button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.join-box button:hover {
+  background: #0056b3;
+}
+
+.call-screen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.video-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.video-section video {
+  width: 40%;
+  background: black;
+  border-radius: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.controls button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  opacity: 0.9;
+}
+
+.controls .leave {
+  background: #dc3545;
+  color: white;
+}
+
+.controls .leave:hover {
+  background: #a71d2a;
+}
